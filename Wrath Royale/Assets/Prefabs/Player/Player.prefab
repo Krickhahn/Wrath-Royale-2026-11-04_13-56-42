@@ -124,8 +124,11 @@ GameObject:
   - component: {fileID: 736795159765329311}
   - component: {fileID: 55491092143410377}
   - component: {fileID: 8497481233072192471}
-  - component: {fileID: 5123672659601105741}
   - component: {fileID: 2983326510846426911}
+  - component: {fileID: 1074272301645847836}
+  - component: {fileID: 1644372825568160582}
+  - component: {fileID: 7657675657629113980}
+  - component: {fileID: 8592542705558428789}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -202,43 +205,6 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &5123672659601105741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336016842872053309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffb08ea0bb96064d8b9a641f582a27c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NetworkPlayerMovement
-  ShowTopMostFoldoutHeaderGroup: 1
-  cameraPivot: {fileID: 5166594236321618107}
-  playerCamera: {fileID: 7555841735857505173}
-  audioListener: {fileID: 4741609860867546246}
-  mouseSensitivity: 0.1
-  maxLookAngle: 85
-  walkSpeed: 4
-  runSpeed: 7
-  crouchSpeed: 2
-  groundAcceleration: 40
-  airAcceleration: 8
-  jumpHeight: 1.2
-  gravity: 25
-  standingHeight: 2
-  crouchHeight: 1
-  standingEyeHeight: 2
-  crouchEyeHeight: 1.5
-  crouchTransitionSpeed: 10
-  ceilingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  slideStartSpeed: 10
-  slideEndSpeed: 3
-  slideDuration: 0.9
-  slideCooldown: 0.5
 --- !u!114 &2983326510846426911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +251,103 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &1074272301645847836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336016842872053309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f084b65cff039a4bbb3320318c5a662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NetworkPlayerMovement
+  ShowTopMostFoldoutHeaderGroup: 1
+  cameraPivot: {fileID: 5166594236321618107}
+  playerCamera: {fileID: 7555841735857505173}
+  audioListener: {fileID: 4741609860867546246}
+  mouseSensitivity: 0.1
+  maxLookAngle: 85
+  walkSpeed: 4
+  runSpeed: 7
+  crouchSpeed: 2
+  groundAcceleration: 40
+  airAcceleration: 8
+  jumpHeight: 1.2
+  gravity: 25
+  standingHeight: 2
+  crouchHeight: 1
+  standingEyeHeight: 2
+  crouchEyeHeight: 1.7
+  crouchTransitionSpeed: 10
+  ceilingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  slideStartSpeed: 10
+  slideEndSpeed: 3
+  slideDuration: 0.9
+  slideCooldown: 0.5
+--- !u!114 &1644372825568160582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336016842872053309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1082a60582938544fae73f09b8849aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  ShowTopMostFoldoutHeaderGroup: 1
+  maxHealth: 100
+  hitbox: {fileID: 8592542705558428789}
+  debugRespawn: 1
+  respawnDelay: 3
+--- !u!114 &7657675657629113980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336016842872053309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e64b734fcd4174aab0bd807c695a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+  ShowTopMostFoldoutHeaderGroup: 1
+  aimOrigin: {fileID: 9124519208256180367}
+  fists:
+    damage: 10
+    range: 2
+    coneAngle: 35
+    cooldown: 0.5
+  maxOriginError: 3
+--- !u!136 &8592542705558428789
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336016842872053309}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5155544116114599498
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,8 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# Build files
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -6,3 +11,12 @@
 [Ll]ogs/
 UserSettings/
 MemoryCaptures/
+
+# Visual Studio user files
+*.user
+*.suo
+*.vsidx
+
+# Temporary SQLite files
+*.db-wal
+*.db-shm

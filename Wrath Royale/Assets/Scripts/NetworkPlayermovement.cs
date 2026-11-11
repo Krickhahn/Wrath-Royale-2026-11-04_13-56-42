@@ -3,15 +3,15 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Netværksversion af PlayerMovement (Netcode for GameObjects 2.x, Unity 6).
-/// Prototype: ejeren styrer selv sin bevægelse, og NetworkTransform synkroniserer positionen.
+/// NetvÃ¦rksversion af PlayerMovement (Netcode for GameObjects 2.x, Unity 6).
+/// Prototype: ejeren styrer selv sin bevÃ¦gelse, og NetworkTransform synkroniserer positionen.
 ///
 /// Player-prefab skal have:
 ///  - NetworkObject
 ///  - NetworkTransform (Authority Mode = Owner)
 ///  - CharacterController
 ///  - Dette script
-///  - Et child "CameraPivot" med et Camera-child (træk begge ind i felterne nedenfor)
+///  - Et child "CameraPivot" med et Camera-child (trÃ¦k begge ind i felterne nedenfor)
 /// </summary>
 [RequireComponent(typeof(CharacterController))]
 public class NetworkPlayerMovement : NetworkBehaviour
@@ -23,7 +23,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
     [SerializeField] private float mouseSensitivity = 0.1f;
     [SerializeField] private float maxLookAngle = 85f;
 
-    [Header("Bevægelse")]
+    [Header("BevÃ¦gelse")]
     [SerializeField] private float walkSpeed = 4f;
     [SerializeField] private float runSpeed = 7f;
     [SerializeField] private float crouchSpeed = 2f;
@@ -48,7 +48,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
     [SerializeField] private float slideDuration = 0.9f;
     [SerializeField] private float slideCooldown = 0.5f;
 
-    // Synkroniseres til alle klienter (kun ejeren må skrive)
+    // Synkroniseres til alle klienter (kun ejeren mÃ¥ skrive)
     private readonly NetworkVariable<bool> netCrouching = new(false,
         NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
     private readonly NetworkVariable<bool> netSliding = new(false,
@@ -84,12 +84,13 @@ public class NetworkPlayerMovement : NetworkBehaviour
         }
         else
         {
-            // Andre spilleres kamera må ikke være aktivt hos os
+            // Andre spilleres kamera mÃ¥ ikke vÃ¦re aktivt hos os
             if (playerCamera != null) playerCamera.enabled = false;
             if (audioListener != null) audioListener.enabled = false;
 
             // NetworkTransform flytter transformen direkte, og en aktiv
-            // CharacterController kan modarbejde det. Derfor slås den fra på fremmede spillere.
+            // CharacterController kan modarbejde det. Derfor slÃ¥s den fra pÃ¥ fremmede spillere.
+            // (Hitbox til angreb er en separat trigger-collider, se PlayerHealth.)
             controller.enabled = false;
         }
     }
@@ -99,11 +100,19 @@ public class NetworkPlayerMovement : NetworkBehaviour
         if (IsOwner) SetCursorLocked(false);
     }
 
+    /// <summary>Nulstiller fart og slide. Kaldes ved respawn.</summary>
+    public void ResetMotion()
+    {
+        horizontalVelocity = Vector3.zero;
+        verticalVelocity = 0f;
+        if (IsSliding) EndSlide();
+    }
+
     private void Update()
     {
         if (!IsSpawned) return;
 
-        // Fremmede spillere: vis bare crouch-højde ud fra de synkroniserede værdier
+        // Fremmede spillere: vis bare crouch-hÃ¸jde ud fra de synkroniserede vÃ¦rdier
         if (!IsOwner)
         {
             IsCrouching = netCrouching.Value;
@@ -156,7 +165,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
             verticalVelocity = Mathf.Sqrt(2f * jumpHeight * gravity);
         }
 
-        // ---------- Horisontal bevægelse ----------
+        // ---------- Horisontal bevÃ¦gelse ----------
         if (IsSliding)
         {
             UpdateSlide(crouchHeld, dt);
@@ -177,7 +186,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
 
         UpdateHeight(dt);
 
-        // Send tilstand til de andre (NetworkVariable sender kun ved ændring)
+        // Send tilstand til de andre (NetworkVariable sender kun ved Ã¦ndring)
         if (netCrouching.Value != IsCrouching) netCrouching.Value = IsCrouching;
         if (netSliding.Value != IsSliding) netSliding.Value = IsSliding;
     }
@@ -229,7 +238,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
         nextSlideTime = Time.time + slideCooldown;
     }
 
-    // ---------------- Højde ----------------
+    // ---------------- HÃ¸jde ----------------
 
     private void UpdateHeight(float dt)
     {
