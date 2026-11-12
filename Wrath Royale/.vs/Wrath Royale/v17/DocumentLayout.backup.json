@@ -7,7 +7,27 @@
       "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|c:\\users\\ottok\\documents\\github\\wrath-royale\\wrath royale\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\assets\\scripts\\lobbymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lobbymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\assets\\scripts\\playeridentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeridentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\assets\\scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\assets\\scripts\\matchdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\matchdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\assets\\scripts\\lobbyui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lobbyui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45799BEC-1832-2282-7424-C21DB0DD90FC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,8 +54,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Playeridentity.cs",
+              "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Playeridentity.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Playeridentity.cs",
+              "ToolTip": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Playeridentity.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Playeridentity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T00:28:41.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Spawnpoint.cs",
+              "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Spawnpoint.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawnpoint.cs",
+              "ToolTip": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Spawnpoint.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawnpoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T00:25:29.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Matchdata.cs",
+              "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Matchdata.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Matchdata.cs",
+              "ToolTip": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Matchdata.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Matchdata.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T00:25:05.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LobbyUI.cs",
+              "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\LobbyUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LobbyUI.cs",
+              "ToolTip": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\LobbyUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LobbyUI.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAiwDYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T00:24:42.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lobbymanager.cs",
+              "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Lobbymanager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Lobbymanager.cs",
+              "ToolTip": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Lobbymanager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Lobbymanager.cs",
+              "ViewState": "AgIAAKMDAAAAAAAAAAAiwMoDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T00:24:09.286Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,14 +124,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerCombat.cs",
               "ToolTip": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\PlayerCombat.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerCombat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAiwJkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-11T18:12:06.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
@@ -59,12 +139,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T18:11:33.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T18:11:33.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "combatutil.cs",
               "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\combatutil.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\combatutil.cs",
@@ -75,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "NetworkTestUI.cs",
               "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\NetworkTestUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NetworkTestUI.cs",
@@ -87,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "NetworkPlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\NetworkPlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NetworkPlayerMovement.cs",
@@ -99,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Playermovement.cs",
               "DocumentMoniker": "C:\\Users\\ottok\\Documents\\GitHub\\Wrath-Royale\\Wrath Royale\\Assets\\Scripts\\Playermovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Playermovement.cs",

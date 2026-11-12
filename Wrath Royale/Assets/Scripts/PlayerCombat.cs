@@ -72,7 +72,7 @@ public class PlayerCombat : NetworkBehaviour
 
     // ---------------- Server: validering og hit-detektion ----------------
 
-    [Rpc(SendTo.Server, RequireOwnership = true)]
+    [Rpc(SendTo.Server, InvokePermission = RpcInvokePermission.Owner)]
     private void AttackRpc(Vector3 origin, Vector3 direction)
     {
         if (health.IsDead) return;
